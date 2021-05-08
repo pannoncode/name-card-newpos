@@ -48,11 +48,14 @@ html, body, div, span, applet, object, iframe,
 body {
   /*background-color: antiquewhite; ---help color */
   display: flex;
+  background: url(assets/digital-blue-dna-biotechnology-future-of-health-shutterstock-750726223-1068x601.jpeg)no-repeat center center fixed;
+  background-size: cover;
 }
 
 .container {
-  /*background-color: bisque; ---help color */
-  border: 2px solid;
+  /*background-color: bisque; 
+  border: 2px solid; ---help color/border */
+  background-color: hsla(228, 100%, 100%, 0.7);
 }
 
 #box-head {
@@ -70,60 +73,149 @@ body {
   border: 2px solid; ---help color/border */
 }
 
+h1, h3 {
+  font-family: 'Open Sans', Arial, sans-serif;
+}
 
+p {
+  font-family: Arial, serif;
+}
 /*---Display break 384px-768px---*/
 
 @media (min-width: 384px) and (max-width: 768px) {
+  /*---Base---*/
+  html {
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 1.875rem;
+    padding-bottom: 1%;
+    padding-top: 1%;
+  }
+  
+  p {
+    text-align: justify;
+    line-height: 1.5rem;
+    width: 90%;
+    margin: 10% auto;
+  }
+  
+  a {
+    color: black; 
+    padding: 3% 10% 3% 10%;
+  }
+  
+  /*---Frame---*/
   .container {
-    width: 24rem;
-    max-width: calc(100% - 2%);
+    width: 100%;
     height: 100vh;
     margin: 0 auto;
-    position: relative;
+    border-radius: 5% 0 5% 0;
   }
+  
   #box-head {
     width: calc(100% - 2%);
     height: 36%;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
+  
   #box-links {
     width: calc(100% - 2%);
-    height: 20%;
+    height: 10%;
+    border-top: 2px solid;
   }
+  
   #box-content {
     width: calc(100% - 2%);
     height: 42%; 
+    border-top: solid 2px;
+    border-radius: 20%;
   }
+  
   .box {
     margin: 0 auto;
   }
+  
   img {
-  width: calc(100% - 30%);
-  height: 150px;
-}
+    width: 180px;
+    height: 150px;
+    filter: grayscale(100%);
+    border-radius: 20% 0 20% 0;
+  }
+  
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /*---"Effects"---*/
+  i:hover {
+    transition-delay: 0.2s;
+    transform: scale(1.2);
+    transform: scale(1.3);
+    color: black;
+    filter: drop-shadow(10px 10px 7px gray);
+  }
+  
+  img:hover {
+    transition-delay: 0.3s;
+    transform: scale(1.1);
+    border-radius: 0;
+    box-shadow: 5px 5px 15px 5px black;
+    filter: grayscale(0);
+  }
+    
 }
 
-/*---Display break 768px-1024px---*/
-
-@media (min-width: 768px) and (max-width: 1024px){
+/*---Display break min768px---*/
+  /*---Base---*/
+  html {
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 1.6rem;
+    padding-bottom: 1%;
+    padding-top: 1%;
+  }
+  
+  p {
+    text-align: justify;
+    line-height: 1rem;
+    width: 90%;
+    margin: 10% auto;
+  }
+  
+  a {
+    color: black; 
+    padding: 3% 10% 3% 10%;
+  } 
+/*---Frame---*/
+@media (min-width: 768px) /*and (max-width: 1024px)*/{
   body {
     display: flex;
   }
   .container {
     width: 40rem;
-    height: 24rem;
+    height: 20rem;
     margin: 10% auto;
     position: relative;
-
+    border-radius: 30px;
   }
   #box-head {
     width: 50%;
-    height: 78%;
+    height: 68%;
     top: 0;
     left: 0;
   }
   #box-links {
     width: 50%;
-    height: 20%;
+    height: 10%;
     bottom: 0;
     left: 0;
   }
@@ -132,14 +224,22 @@ body {
     height: 99%;
     top: 0;
     right: 0;
+    border-left: 2px solid black;
   }
   .box {
     margin: 0 auto;
     position: absolute;
   }
+  img {
+    width: 180px;
+    height: 150px;
+    filter: grayscale(100%);
+    border-radius: 20% 0 20% 0;
+    padding: 10% 20% 5% 20%;
+  }
 }
 
-/*---Display break min1024px---*/
+/*---Display break min1024px
 @media (min-width: 1024px){
   body {
     display: flex;
@@ -173,4 +273,4 @@ body {
     margin: 0 auto;
     position: absolute;
   }
-}
+}  ---*/
