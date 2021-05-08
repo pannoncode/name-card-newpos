@@ -132,7 +132,7 @@ h1, h3, p {
     width: calc(100% - 2%);
     height: 10%;
     border-top: 2px solid;
-  }
+  } 
   
   #box-content {
     width: calc(100% - 2%);
