@@ -48,7 +48,7 @@ html, body, div, span, applet, object, iframe,
 body {
   /*background-color: antiquewhite; ---help color */
   display: flex;
-  background: url(assets/digital-blue-dna-biotechnology-future-of-health-shutterstock-750726223-1068x601.jpeg)no-repeat center center fixed;
+  background: url(assets/grunge-background-1167.jpeg) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -79,6 +79,10 @@ h1, h3 {
 
 p {
   font-family: Arial, serif;
+}
+
+h1, h3, p {
+  color: black;
 }
 /*---Display break 384px-768px---*/
 
