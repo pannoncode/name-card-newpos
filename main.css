@@ -55,7 +55,8 @@ body {
 .container {
   /*background-color: bisque; 
   border: 2px solid; ---help color/border */
-  background-color: hsla(228, 100%, 100%, 0.7);
+  background-color: hsla(25, 48%, 35%, 0.3);
+  
 }
 
 #box-head {
@@ -115,7 +116,7 @@ h1, h3, p {
     width: 100%;
     height: 100vh;
     margin: 0 auto;
-    border-radius: 5% 0 5% 0;
+    border-radius: 5%;
   }
   
   #box-head {
@@ -148,7 +149,7 @@ h1, h3, p {
     width: 180px;
     height: 150px;
     filter: grayscale(100%);
-    border-radius: 20% 0 20% 0;
+    border-radius: 40%;
   }
   
   section {
@@ -169,7 +170,7 @@ h1, h3, p {
   img:hover {
     transition-delay: 0.3s;
     transform: scale(1.1);
-    border-radius: 0;
+    border-radius: 40%;
     box-shadow: 5px 5px 15px 5px black;
     filter: grayscale(0);
   }
@@ -209,7 +210,8 @@ h1, h3, p {
     height: 20rem;
     margin: 10% auto;
     position: relative;
-    border-radius: 30px 0 30px 0;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 5px 5px 5px black;
   }
   #box-head {
     width: 50%;
@@ -244,7 +246,7 @@ h1, h3, p {
     width: 180px;
     height: 150px;
     filter: grayscale(100%);
-    border-radius: 0 20% 0 20%;
+    border-radius: 40%;
   }
   /*---"Effects"---*/
   i:hover {
@@ -260,7 +262,7 @@ h1, h3, p {
     transform: scale(1.1);
     box-shadow: 5px 5px 15px 5px black;
     filter: grayscale(0);
-    border-radius: 0;
+    border-radius: 40%;
   }
     
 }
