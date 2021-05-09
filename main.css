@@ -148,8 +148,9 @@ h1, h3, p {
   img {
     width: 180px;
     height: 150px;
-    filter: grayscale(100%);
-    border-radius: 40%;
+    filter: sepia(80%);
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px black;
   }
   
   section {
@@ -170,7 +171,7 @@ h1, h3, p {
   img:hover {
     transition-delay: 0.3s;
     transform: scale(1.1);
-    border-radius: 40%;
+    border-radius: 50%;
     box-shadow: 5px 5px 15px 5px black;
     filter: grayscale(0);
   }
@@ -245,8 +246,9 @@ h1, h3, p {
   img {
     width: 180px;
     height: 150px;
-    filter: grayscale(100%);
-    border-radius: 40%;
+    filter: sepia(80%);
+    box-shadow: 5px 5px 5px black;
+    border-radius: 50%;
   }
   /*---"Effects"---*/
   i:hover {
@@ -262,7 +264,7 @@ h1, h3, p {
     transform: scale(1.1);
     box-shadow: 5px 5px 15px 5px black;
     filter: grayscale(0);
-    border-radius: 40%;
+    border-radius: 50%;
   }
     
 }
