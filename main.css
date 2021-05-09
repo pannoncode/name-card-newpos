@@ -67,6 +67,7 @@ body {
 #box-links {
   /*background-color: cadetblue;
   border: 2px solid; ---help color/border */
+  
 }
 
 #box-content {
@@ -82,12 +83,13 @@ p {
   font-family: Arial, serif;
 }
 
-h1, h3, p {
+h1, h3, p, a {
   color: black;
 }
+
 /*---Display break 384px-768px---*/
 
-@media (min-width: 384px) and (max-width: 768px) {
+@media (min-width: 384px) and (max-width: 767px) {
   /*---Base---*/
   html {
     font-size: 16px;
@@ -106,7 +108,7 @@ h1, h3, p {
     margin: 10% auto;
   }
   
-  a {
+  .linkpos {
     color: black; 
     padding: 3% 10% 3% 10%;
   }
@@ -197,10 +199,10 @@ h1, h3, p {
     margin: 10% auto;
   }
   
-  a {
+  .linkpos  {
     color: black; 
-    padding: 0 10% 0 10%;
   } 
+
 /*---Frame---*/
 @media (min-width: 768px) /*and (max-width: 1024px)*/{
   body {
@@ -225,12 +227,19 @@ h1, h3, p {
     justify-content: center;
   }
   #box-links {
-    width: 50%;
-    height: 10%;
-    bottom: 0;
-    left: 0;
-    border-top: solid 2px black;
+    width: 2rem;
+    height: 6.1rem;
+    padding: 0.3rem;
+    /*bottom: 0;
+    left: 0; -----without position: fixed---*/
+    border: solid 2px black;
     border-radius: 10px;
+    /*---New position after V1.1---*/
+    position: fixed;
+    top: 35%;
+    right: 0.2rem;
+    background-color: hsla(25, 48%, 35%, 0.2);
+    box-shadow: 5px 5px 5px black;
   }
   #box-content {
     width: 49%;
