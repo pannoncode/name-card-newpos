@@ -8,8 +8,8 @@ html, body, div, span, applet, object, iframe,
   dl, dt, dd, ol, ul, li,
   fieldset, form, label, legend,
   table, caption, tbody, tfoot, thead, tr, th, td,
-  article, aside, canvas, details, embed, 
-  figure, figcaption, footer, header, hgroup, 
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
   menu, nav, output, ruby, section, summary,
   time, mark, audio, video {
       margin: 0;
@@ -20,7 +20,7 @@ html, body, div, span, applet, object, iframe,
       vertical-align: baseline;
   }
   /* HTML5 display-role reset for older browsers */
-  article, aside, details, figcaption, figure, 
+  article, aside, details, figcaption, figure,
   footer, header, hgroup, menu, nav, section {
       display: block;
   }
@@ -53,21 +53,21 @@ body {
 }
 
 .container {
-  /*background-color: bisque; 
+  /*background-color: bisque;
   border: 2px solid; ---help color/border */
   background-color: hsla(25, 48%, 35%, 0.3);
-  
+
 }
 
 #box-head {
-  /*background-color: burlywood; 
+  /*background-color: burlywood;
   border: 2px solid; ---help color/border */
 }
 
 #box-links {
   /*background-color: cadetblue;
   border: 2px solid; ---help color/border */
-  
+
 }
 
 #box-content {
@@ -94,25 +94,25 @@ h1, h3, p, a {
   html {
     font-size: 1rem;
   }
-  
+
   h1 {
     font-size: 1.875rem;
     padding-bottom: 1%;
     padding-top: 1%;
   }
-  
+
   p {
     text-align: justify;
     line-height: 1.5rem;
     width: 90%;
     margin: 10% auto;
   }
-  
+
   .linkpos {
-    color: black; 
+    color: black;
     padding: 3% 10% 3% 10%;
   }
-  
+
   /*---Frame---*/
   .container {
     width: 100%;
@@ -120,33 +120,33 @@ h1, h3, p, a {
     margin: 0 auto;
     border-radius: 5%;
   }
-  
+
   #box-head {
     width: calc(100% - 2%);
-    height: 36%;  
+    height: 36%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  
+
   #box-links {
     width: calc(100% - 2%);
     height: 10%;
     border-top: 0.125rem solid;
-  } 
-  
+  }
+
   #box-content {
     width: calc(100% - 2%);
-    height: 42%; 
+    height: 42%;
     border-top: solid 0.125rem;
     border-radius: 20%;
   }
-  
+
   .box {
     margin: 0 auto;
   }
-  
+
   img {
     width: 70%;
     height: 60%;
@@ -154,13 +154,13 @@ h1, h3, p, a {
     border-radius:8%;
     box-shadow: 0.3125rem 0.3125rem 0.3125rem black;
   }
-  
+
   section {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
+
   /*---"Effects"---*/
   i:hover {
     transition-delay: 0.2s;
@@ -169,15 +169,15 @@ h1, h3, p, a {
     color: black;
     filter: drop-shadow(0.625rem 0.625rem 0.4375rem gray);
   }
-  
+
   img:hover {
     transition-delay: 0.3s;
     transform: scale(1.1);
-    border-radius: 50%;
+    border-radius: 0;
     box-shadow: 0.3125rem 0.3125rem 0.3125rem 0.3125rem black;
     filter: grayscale(0);
   }
-    
+
 }
 
 /*---Display break min481px---*/
@@ -185,13 +185,13 @@ h1, h3, p, a {
   html {
     font-size: 1rem;
   }
-  
+
   h1 {
     font-size: 1.6rem;
     padding-bottom: 2%;
     padding-top: 2%;
   }
-  
+
   p {
     text-align: justify;
     line-height: 1rem;
@@ -199,18 +199,18 @@ h1, h3, p, a {
     margin: 10% auto;
     font-size: 0.9rem;
   }
-  
+
   .linkpos  {
-    color: black; 
-  } 
+    color: black;
+  }
 
 /*---Frame---*/
 @media (min-width: 481px){
   body {
     display: flex;
   }
-  
-  
+
+
   .container {
     width: 40rem;
     height: 20rem;
@@ -265,15 +265,15 @@ h1, h3, p, a {
     color: black;
     filter: drop-shadow(0.625rem 0.625rem 0.625rem gray);
   }
-  
+
   img:hover {
     transition-delay: 0.3s;
     transform: scale(1.1);
     box-shadow: 0.3125rem 0.3125rem 0.9375rem 0.3125rem black;
     filter: grayscale(0);
-    border-radius: 50%;
+    border-radius: 20%;
   }
-    
+
 }
 
 /*---Display break min768px---*/
@@ -281,23 +281,23 @@ h1, h3, p, a {
   html {
     font-size: 1rem;
   }
-  
+
   h1 {
     font-size: 1.6rem;
     padding-bottom: 2%;
     padding-top: 2%;
   }
-  
+
   p {
     text-align: justify;
     line-height: 1rem;
     width: 90%;
     margin: 10% auto;
   }
-  
+
   .linkpos  {
-    color: black; 
-  } 
+    color: black;
+  }
 
 /*---Frame---*/
 @media (min-width: 768px) {
@@ -329,7 +329,7 @@ h1, h3, p, a {
   #box-links {
     width: 2rem;
     height: 6.1rem;
-    padding: 0.3rem; 
+    padding: 0.3rem;
     border: solid 0.125rem black;
     border-radius: 0.625rem;
     position: fixed;
@@ -354,7 +354,7 @@ h1, h3, p, a {
     box-shadow: 0.3125rem 0.3125rem 0.3125rem black;
     border-radius: 50%;
   }
-  
+
   /*---"Effects"---*/
   i:hover {
     transition-delay: 0.2s;
@@ -363,14 +363,13 @@ h1, h3, p, a {
     color: black;
     filter: drop-shadow(10px 10px 7px gray);
   }
-  
+
   img:hover {
     transition-delay: 0.3s;
     transform: scale(1.1);
     box-shadow: 5px 5px 15px 5px black;
     filter: grayscale(0);
-    border-radius: 50%;
+    border-radius: 20%;
   }
-    
-}
 
+}
